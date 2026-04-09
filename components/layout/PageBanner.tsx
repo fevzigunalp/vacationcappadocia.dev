@@ -12,7 +12,7 @@ export default function PageBanner({ title, breadcrumbs }: PageBannerProps) {
       className="relative w-full h-[300px] flex items-center justify-center bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://vacationcappadocia.com/wp-content/uploads/2022/07/cappadocia-banner.jpg')",
+          "url('/images/contact/banner.jpg')",
       }}
     >
       {/* Overlay */}

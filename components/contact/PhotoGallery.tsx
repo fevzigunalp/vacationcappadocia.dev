@@ -1,17 +1,13 @@
 import Image from "next/image";
 
-const IMAGE_BASE = "https://vacationcappadocia.com/wp-content/uploads";
-
 const images = [
-  `${IMAGE_BASE}/2022/06/balloons-goreme-820x520.jpg`,
-  `${IMAGE_BASE}/2022/06/cappadocia-winter-820x520.jpg`,
-  `${IMAGE_BASE}/2022/06/honeymoon-cappadocia-820x520.jpg`,
-  `${IMAGE_BASE}/2022/06/fascinating-cappadocia-820x520.jpg`,
-  `${IMAGE_BASE}/2022/06/popular-cappadocia-820x520.jpg`,
-  `${IMAGE_BASE}/2022/06/spirit-cappadocia-820x520.jpg`,
-  `${IMAGE_BASE}/2022/06/trekking-cappadocia-820x520.jpg`,
-  `${IMAGE_BASE}/2022/06/goreme-820x520.jpg`,
-  `${IMAGE_BASE}/2022/06/urgup-820x520.jpg`,
+  "/images/contact/gallery1.jpg",
+  "/images/contact/gallery2.jpg",
+  "/images/contact/gallery3.jpg",
+  "/images/contact/gallery4.jpg",
+  "/images/contact/gallery5.jpg",
+  "/images/contact/gallery6.jpg",
+  "/images/contact/gallery7.jpg",
 ];
 
 export default function PhotoGallery() {
