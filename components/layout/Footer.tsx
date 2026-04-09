@@ -51,7 +51,7 @@ const usefulLinks = [
 function FooterColumn({ title, links }: { title: string; links: { label: string; href: string; external?: boolean }[] }) {
   return (
     <div>
-      <h4 className="text-white font-semibold text-lg mb-4">{title}</h4>
+      <h4 className="text-accent font-semibold text-lg mb-4">{title}</h4>
       <ul className="space-y-2.5">
         {links.map((link) => (
           <li key={link.label}>
@@ -60,14 +60,14 @@ function FooterColumn({ title, links }: { title: string; links: { label: string;
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors text-sm"
+                className="text-body-text hover:text-primary transition-colors text-sm"
               >
                 {link.label}
               </a>
             ) : (
               <Link
                 href={link.href}
-                className="text-gray-400 hover:text-primary transition-colors text-sm"
+                className="text-body-text hover:text-primary transition-colors text-sm"
               >
                 {link.label}
               </Link>
@@ -81,7 +81,7 @@ function FooterColumn({ title, links }: { title: string; links: { label: string;
 
 export default function Footer() {
   return (
-    <footer className="bg-[#222]">
+    <footer className="bg-[#FDF8F0]">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -93,7 +93,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-white/10">
+      <div className="border-t border-[#e8dfd3]">
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
             {/* Logo */}
@@ -107,7 +107,7 @@ export default function Footer() {
             </Link>
 
             {/* Contact Info */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 text-gray-400 text-sm">
+            <div className="flex flex-col sm:flex-row items-center gap-4 text-body-text text-sm">
               <div className="flex items-center gap-2">
                 <MapPin size={16} className="text-primary shrink-0" />
                 <span>Cumhuriyet Mahallesi Dumlup&#305;nar Caddesi Eski Sanayi Sitesi No:71/27 &Uuml;rg&uuml;p / Nev&#351;ehir</span>
@@ -128,8 +128,8 @@ export default function Footer() {
           </div>
 
           {/* Copyright & Social */}
-          <div className="flex flex-col sm:flex-row items-center justify-between mt-6 pt-6 border-t border-white/10 gap-4">
-            <p className="text-gray-500 text-sm">
+          <div className="flex flex-col sm:flex-row items-center justify-between mt-6 pt-6 border-t border-[#e8dfd3] gap-4">
+            <p className="text-text-lighter text-sm">
               &copy; 2026 Navantix Travel. All rights reserved.
             </p>
             <div className="flex items-center gap-4">
@@ -137,7 +137,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-body-text hover:text-primary transition-colors"
               >
                 <FacebookIcon />
               </a>
@@ -145,7 +145,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-body-text hover:text-primary transition-colors"
               >
                 <InstagramIcon />
               </a>
@@ -153,12 +153,12 @@ export default function Footer() {
                 href="https://spotify.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-body-text hover:text-primary transition-colors"
               >
                 <SpotifyIcon />
               </a>
             </div>
-            <p className="text-gray-500 text-xs">
+            <p className="text-text-lighter text-xs">
               Designed by{" "}
               <a
                 href="https://comanalab.com"

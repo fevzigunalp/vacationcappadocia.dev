@@ -9,14 +9,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Zourney Sub';
-  src: url('/fonts/Zourney-Sub.woff2') format('woff2'),
-       url('/fonts/Zourney-Sub.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 :root {
   --primary: #e46d30;
@@ -79,11 +71,11 @@ h2 {
 }
 
 h3 {
-  font-family: 'Zourney Sub', serif;
-  font-weight: normal;
-  font-size: 38px;
-  line-height: 1.1;
-  color: var(--accent);
+  font-family: 'Jost', HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--body-text);
 }
 
 h4, h5, h6 {
