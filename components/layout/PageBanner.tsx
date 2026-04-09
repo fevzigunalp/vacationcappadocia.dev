@@ -16,10 +16,10 @@ export default function PageBanner({ title, breadcrumbs }: PageBannerProps) {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-secondary/70" />
+      <div className="absolute inset-0 bg-black/70" />
 
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-white text-4xl md:text-5xl font-bold mb-4">
+        <h1 className="text-white text-4xl md:text-5xl font-bold mb-4" style={{ textShadow: '1px 0 1px rgba(0,0,0,.5)' }}>
           {title}
         </h1>
         <nav className="flex items-center justify-center gap-1.5 text-sm">

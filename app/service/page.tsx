@@ -67,7 +67,7 @@ export default function ServicePage() {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold text-secondary mb-4">
+            <h2 className="text-3xl text-accent mb-4">
               What We Offer
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -81,12 +81,12 @@ export default function ServicePage() {
             {services.map((s) => (
               <div
                 key={s.title}
-                className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow text-center"
+                className="bg-light-bg rounded-[3px] p-8 shadow-sm hover:shadow-lg transition-shadow text-center"
               >
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
                   <s.icon size={28} className="text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-secondary mb-3">
+                <h3 className="text-xl font-semibold text-accent mb-3">
                   {s.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">

@@ -23,25 +23,25 @@ export default function MapSection() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`rounded-full px-6 py-2 text-sm font-semibold transition-colors ${
+              className={`rounded-[3px] px-6 py-2 text-sm font-semibold transition duration-300 ${
                 activeTab === tab
-                  ? "bg-orange-500 text-white"
-                  : "bg-white text-gray-700 hover:bg-orange-50"
+                  ? "bg-primary text-white"
+                  : "bg-white text-body-text hover:bg-primary/10"
               }`}
             >
               {tab}
             </button>
           ))}
         </div>
-        <h2 className="mb-4 text-3xl font-bold text-gray-900">
+        <h2 className="mb-4 text-3xl text-accent">
           Explore {activeTab}
         </h2>
-        <p className="mx-auto mb-8 max-w-2xl text-gray-600">
+        <p className="mx-auto mb-8 max-w-2xl text-body-text">
           Discover amazing destinations, tours, and activities across {activeTab}. Plan your next adventure with us.
         </p>
         <Link
           href="/destinations"
-          className="inline-block rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition-colors hover:bg-orange-600"
+          className="inline-block rounded-[3px] bg-primary px-[27px] py-[11px] font-semibold text-white transition duration-300 hover:bg-primary-dark"
         >
           Check Our Destinations
         </Link>

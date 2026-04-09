@@ -6,7 +6,7 @@ export default function TeamSection() {
   return (
     <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-secondary mb-4">
+        <h2 className="text-3xl md:text-4xl text-center text-accent mb-4">
           Meet The Team
         </h2>
         <p className="text-center text-gray-500 mb-14">Our Travel Advisors</p>
@@ -26,7 +26,7 @@ export default function TeamSection() {
                   sizes="192px"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-secondary">
+              <h3 className="text-lg font-semibold text-accent">
                 {member.name}
               </h3>
               <p className="text-gray-500 text-sm mb-3">{member.role}</p>

@@ -32,11 +32,11 @@ export default function NewsletterSection() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
-                className="flex-1 px-4 py-3 rounded-lg border border-border bg-white text-sm outline-none focus:ring-2 focus:ring-primary"
+                className="flex-1 px-4 py-3 rounded-[3px] border border-border bg-white text-sm outline-none focus:ring-2 focus:ring-primary"
               />
               <button
                 type="submit"
-                className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium text-sm flex items-center gap-2 transition-colors"
+                className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-[3px] font-medium text-sm flex items-center gap-2 transition-colors"
               >
                 <Send size={16} />
                 Subscribe
@@ -58,7 +58,7 @@ export default function NewsletterSection() {
                   href="https://wa.me/905375949221"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg text-sm font-medium transition-colors"
+                  className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-[3px] text-sm font-medium transition-colors"
                 >
                   <MessageCircle size={18} />
                   Chat Now

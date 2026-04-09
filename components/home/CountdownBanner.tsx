@@ -47,10 +47,10 @@ export default function CountdownBanner() {
     >
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center text-white">
-        <p className="mb-2 text-sm font-semibold tracking-widest text-orange-400">
+        <p className="mb-2 text-sm font-semibold tracking-widest text-primary">
           LIMITED TIME OFFER
         </p>
-        <h2 className="mb-4 text-3xl font-bold md:text-5xl">
+        <h2 className="mb-4 text-3xl md:text-5xl">
           New Experiences in Cappadocia — 50% OFF
         </h2>
         <div className="mb-8 flex justify-center gap-4">
@@ -65,7 +65,7 @@ export default function CountdownBanner() {
         </div>
         <Link
           href="/tours"
-          className="inline-block rounded-full bg-orange-500 px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-orange-600"
+          className="inline-block rounded-[3px] bg-primary px-[27px] py-[11px] text-lg font-semibold text-white transition duration-300 hover:bg-primary-dark"
         >
           Book Now
         </Link>

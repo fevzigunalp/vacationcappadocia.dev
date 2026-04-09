@@ -12,7 +12,7 @@ export default function LastMinuteDeals() {
   return (
     <section className="py-20">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-12 text-center text-3xl font-bold text-gray-900 md:text-4xl">
+        <h2 className="mb-12 text-center text-3xl text-accent md:text-4xl">
           Last Minute Deals
         </h2>
         <Swiper

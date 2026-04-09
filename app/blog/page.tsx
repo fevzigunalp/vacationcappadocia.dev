@@ -30,7 +30,7 @@ export default function BlogPage() {
                 href={`/blog/${post.slug}`}
                 className="group block"
               >
-                <div className="overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-shadow">
+                <div className="overflow-hidden rounded-[3px] bg-light-bg shadow-md hover:shadow-xl transition-shadow">
                   <div className="relative h-56 overflow-hidden">
                     <Image
                       src={post.image}
@@ -45,7 +45,7 @@ export default function BlogPage() {
                       <Calendar size={14} />
                       <span>{post.date}</span>
                     </div>
-                    <h3 className="text-lg font-semibold text-secondary group-hover:text-primary transition-colors">
+                    <h3 className="text-lg font-semibold text-accent group-hover:text-primary transition-colors">
                       {post.title}
                     </h3>
                   </div>

@@ -10,9 +10,9 @@ import "swiper/css/pagination";
 
 export default function TestimonialSlider() {
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4 bg-light-bg">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12">
+        <h2 className="text-3xl md:text-4xl text-accent mb-12">
           What Our Guests Say
         </h2>
 
@@ -31,7 +31,7 @@ export default function TestimonialSlider() {
                 <p className="text-gray-600 text-lg leading-relaxed mb-8 italic">
                   &ldquo;{t.text}&rdquo;
                 </p>
-                <h4 className="text-lg font-semibold text-secondary">
+                <h4 className="text-lg font-semibold text-accent">
                   {t.name}
                 </h4>
                 <p className="text-gray-500 text-sm">{t.location}</p>

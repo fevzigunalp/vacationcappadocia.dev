@@ -39,9 +39,9 @@ const reasons = [
 
 export default function WhyBookWithUs() {
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4 bg-light-bg">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-secondary mb-14">
+        <h2 className="text-3xl md:text-4xl text-center text-accent mb-14">
           Convenient and Easy Tour Booking Process
         </h2>
 
@@ -49,12 +49,12 @@ export default function WhyBookWithUs() {
           {reasons.map((r) => (
             <div
               key={r.number}
-              className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow"
+              className="bg-white rounded-[3px] p-8 shadow-sm hover:shadow-lg transition-shadow"
             >
               <span className="text-5xl font-bold text-primary/20">
                 {r.number}
               </span>
-              <h3 className="text-xl font-semibold text-secondary mt-3 mb-3">
+              <h3 className="text-xl font-semibold text-accent mt-3 mb-3">
                 {r.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">{r.description}</p>

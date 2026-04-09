@@ -54,13 +54,13 @@ export default function HeroSlider() {
             >
               <div className="absolute inset-0 bg-black/50" />
               <div className="relative z-10 px-4 text-center text-white">
-                <h1 className="mb-4 text-4xl font-bold md:text-6xl lg:text-7xl">
+                <h1 className="mb-4 text-4xl md:text-6xl lg:text-7xl">
                   {slide.heading}
                 </h1>
                 <p className="mb-8 text-lg md:text-2xl">{slide.subtitle}</p>
                 <Link
                   href={slide.link}
-                  className="inline-block rounded-full bg-orange-500 px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-orange-600"
+                  className="inline-block rounded-[3px] bg-primary px-[27px] py-[11px] text-lg font-semibold text-white transition duration-300 hover:bg-primary-dark"
                 >
                   {slide.cta}
                 </Link>

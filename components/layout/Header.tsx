@@ -34,7 +34,7 @@ export default function Header() {
     <>
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          scrolled ? "bg-secondary shadow-lg" : "bg-transparent"
+          scrolled ? "bg-white shadow-lg" : "bg-white"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-20">
@@ -55,7 +55,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white text-sm font-medium hover:text-primary transition-colors"
+                className="text-accent text-sm font-medium hover:text-primary transition-all duration-300 ease-out"
               >
                 {link.label}
               </Link>
@@ -67,7 +67,7 @@ export default function Header() {
             {/* Search */}
             <button
               onClick={() => setSearchOpen(!searchOpen)}
-              className="text-white hover:text-primary transition-colors p-2"
+              className="text-accent hover:text-primary transition-all duration-300 ease-out p-2"
               aria-label="Search"
             >
               <Search size={20} />
@@ -76,7 +76,7 @@ export default function Header() {
             {/* Login */}
             <button
               onClick={() => setLoginOpen(true)}
-              className="hidden sm:flex items-center gap-1.5 text-white text-sm font-medium hover:text-primary transition-colors"
+              className="hidden sm:flex items-center gap-1.5 text-accent text-sm font-medium hover:text-primary transition-all duration-300 ease-out"
             >
               <User size={18} />
               <span>Login</span>
@@ -85,7 +85,7 @@ export default function Header() {
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileOpen(true)}
-              className="lg:hidden text-white p-2"
+              className="lg:hidden text-accent p-2"
               aria-label="Open menu"
             >
               <Menu size={24} />
@@ -95,17 +95,17 @@ export default function Header() {
 
         {/* Search Bar */}
         {searchOpen && (
-          <div className="bg-secondary/95 backdrop-blur-sm px-4 py-3">
+          <div className="bg-white shadow-md px-4 py-3">
             <div className="max-w-3xl mx-auto flex items-center gap-2">
               <input
                 type="text"
                 placeholder="Search tours, activities..."
-                className="flex-1 bg-white/10 text-white placeholder-white/50 px-4 py-2.5 rounded-lg outline-none focus:ring-2 focus:ring-primary"
+                className="flex-1 bg-light-bg text-accent placeholder-text-lighter px-4 py-2.5 rounded-[3px] border border-border outline-none focus:ring-2 focus:ring-primary"
                 autoFocus
               />
               <button
                 onClick={() => setSearchOpen(false)}
-                className="text-white/70 hover:text-white p-2"
+                className="text-body-text hover:text-accent p-2"
               >
                 <X size={20} />
               </button>
@@ -121,7 +121,7 @@ export default function Header() {
             className="absolute inset-0 bg-black/50"
             onClick={() => setMobileOpen(false)}
           />
-          <aside className="absolute top-0 left-0 w-72 h-full bg-secondary overflow-y-auto">
+          <aside className="absolute top-0 left-0 w-72 h-full bg-[#222] overflow-y-auto">
             <div className="flex items-center justify-between p-4 border-b border-white/10">
               <Image
                 src="https://vacationcappadocia.com/wp-content/uploads/2022/07/vacation-cappadocia-logo.svg"

@@ -18,7 +18,7 @@ export default function SectionTitle({
           {overline}
         </span>
       )}
-      <h2 className="text-heading text-3xl md:text-4xl font-bold mb-3">
+      <h2 className="text-accent text-3xl md:text-4xl mb-3">
         {title}
       </h2>
       {subtitle && (

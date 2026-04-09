@@ -28,7 +28,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
       />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md mx-4 p-8">
+      <div className="relative bg-[#eef0f8] rounded-lg shadow-2xl w-full max-w-md mx-4 p-8">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
@@ -49,7 +49,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-2.5 rounded-lg border border-border text-sm outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-2.5 rounded-[3px] border border-border text-sm outline-none focus:ring-2 focus:ring-primary"
               placeholder="Enter your email"
             />
           </div>
@@ -63,7 +63,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full px-4 py-2.5 rounded-lg border border-border text-sm outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-2.5 rounded-[3px] border border-border text-sm outline-none focus:ring-2 focus:ring-primary"
               placeholder="Enter your password"
             />
           </div>
@@ -80,7 +80,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
 
           <button
             type="submit"
-            className="w-full bg-primary hover:bg-primary-dark text-white py-3 rounded-lg font-semibold transition-colors"
+            className="w-full bg-primary hover:bg-primary-dark text-white py-3 rounded-[3px] font-semibold transition-all duration-300 ease-out"
           >
             Sign In
           </button>

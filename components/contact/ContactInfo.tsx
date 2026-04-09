@@ -33,13 +33,13 @@ export default function ContactInfo() {
       {infoCards.map((card) => (
         <div
           key={card.title}
-          className="bg-white rounded-xl shadow-md p-6 flex gap-4"
+          className="bg-light-bg rounded-[3px] shadow-md p-6 flex gap-4"
         >
           <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
             <card.icon size={22} className="text-primary" />
           </div>
           <div>
-            <h3 className="font-semibold text-secondary text-lg mb-2">
+            <h3 className="font-semibold text-accent text-lg mb-2">
               {card.title}
             </h3>
             {card.lines.map((line, i) => (

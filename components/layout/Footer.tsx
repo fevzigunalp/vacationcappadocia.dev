@@ -81,7 +81,7 @@ function FooterColumn({ title, links }: { title: string; links: { label: string;
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary">
+    <footer className="bg-[#222]">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">

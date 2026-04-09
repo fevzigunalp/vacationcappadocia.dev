@@ -6,10 +6,10 @@ export default function Destinations() {
   return (
     <section className="py-20">
       <div className="mx-auto max-w-7xl px-4">
-        <p className="mb-2 text-center text-sm font-semibold tracking-widest text-orange-500">
+        <p className="mb-2 text-center text-sm font-semibold tracking-widest text-primary">
           DISCOVER MAGIC OF CAPPADOCIA!
         </p>
-        <h2 className="mb-12 text-center text-3xl font-bold text-gray-900 md:text-4xl">
+        <h2 className="mb-12 text-center text-3xl text-accent md:text-4xl">
           Top Attractions Destinations
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -17,7 +17,7 @@ export default function Destinations() {
             <Link
               key={d.slug}
               href={`/destinations/${d.slug}`}
-              className="group relative block h-64 overflow-hidden rounded-xl"
+              className="group relative block h-64 overflow-hidden rounded-[3px]"
             >
               <Image
                 src={d.image}
@@ -28,7 +28,7 @@ export default function Destinations() {
               />
               <div className="absolute inset-0 bg-black/40 transition-colors group-hover:bg-black/50" />
               <div className="absolute bottom-5 left-5 text-white">
-                <h3 className="text-xl font-bold">{d.name}</h3>
+                <h3 className="text-xl">{d.name}</h3>
                 <p className="text-sm opacity-90">{d.tourCount} Tours+</p>
               </div>
             </Link>
@@ -37,7 +37,7 @@ export default function Destinations() {
         <div className="mt-10 text-center">
           <Link
             href="/destinations"
-            className="inline-block rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition-colors hover:bg-orange-600"
+            className="inline-block rounded-[3px] bg-primary px-[27px] py-[11px] font-semibold text-white transition duration-300 hover:bg-primary-dark"
           >
             Explore to More Destinations
           </Link>

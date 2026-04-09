@@ -34,8 +34,8 @@ export default function MyAccountPage() {
       />
       <section className="py-20 px-4">
         <div className="max-w-md mx-auto">
-          <div className="bg-white rounded-xl shadow-md p-8">
-            <h2 className="text-2xl font-bold text-secondary mb-6 text-center">
+          <div className="bg-white rounded-[3px] shadow-md p-8">
+            <h2 className="text-2xl text-accent mb-6 text-center">
               Login
             </h2>
 
@@ -56,7 +56,7 @@ export default function MyAccountPage() {
                     },
                   })}
                   placeholder="Email Address"
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  className="w-full px-4 py-3 border border-border rounded-[3px] focus:outline-none focus:ring-2 focus:ring-primary/50"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm mt-1">
@@ -72,7 +72,7 @@ export default function MyAccountPage() {
                   })}
                   type="password"
                   placeholder="Password"
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  className="w-full px-4 py-3 border border-border rounded-[3px] focus:outline-none focus:ring-2 focus:ring-primary/50"
                 />
                 {errors.password && (
                   <p className="text-red-500 text-sm mt-1">
@@ -83,7 +83,7 @@ export default function MyAccountPage() {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors"
+                className="w-full flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-[3px] font-semibold hover:bg-primary-dark transition-colors"
               >
                 <LogIn size={18} />
                 Sign In

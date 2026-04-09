@@ -18,14 +18,14 @@ export default function PhotoGallery() {
   return (
     <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-secondary mb-12">
+        <h2 className="text-3xl text-center text-accent mb-12">
           Cappadocia Gallery
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((src, i) => (
             <div
               key={i}
-              className="relative h-48 md:h-64 rounded-xl overflow-hidden group"
+              className="relative h-48 md:h-64 rounded-[3px] overflow-hidden group"
             >
               <Image
                 src={src}

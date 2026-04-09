@@ -31,7 +31,7 @@ export default function ContactForm() {
 
   return (
     <div className="bg-white rounded-xl shadow-md p-8">
-      <h2 className="text-2xl font-bold text-secondary mb-6">
+      <h2 className="text-2xl text-accent mb-6">
         Send Us a Message
       </h2>
 
@@ -47,7 +47,7 @@ export default function ContactForm() {
           <input
             {...register("fullName", { required: "Full name is required" })}
             placeholder="Full Name"
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+            className="w-full px-4 py-3 border border-border rounded-[3px] focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
           />
           {errors.fullName && (
             <p className="text-red-500 text-sm mt-1">
@@ -66,7 +66,7 @@ export default function ContactForm() {
               },
             })}
             placeholder="Email"
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+            className="w-full px-4 py-3 border border-border rounded-[3px] focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
           />
           {errors.email && (
             <p className="text-red-500 text-sm mt-1">
@@ -79,7 +79,7 @@ export default function ContactForm() {
           <input
             {...register("phone", { required: "Contact number is required" })}
             placeholder="Contact Number"
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+            className="w-full px-4 py-3 border border-border rounded-[3px] focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
           />
           {errors.phone && (
             <p className="text-red-500 text-sm mt-1">
@@ -93,7 +93,7 @@ export default function ContactForm() {
             {...register("message", { required: "Message is required" })}
             placeholder="Your Message"
             rows={5}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors resize-none"
+            className="w-full px-4 py-3 border border-border rounded-[3px] focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors resize-none"
           />
           {errors.message && (
             <p className="text-red-500 text-sm mt-1">
@@ -105,7 +105,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50"
+          className="flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-[3px] font-semibold hover:bg-primary-dark transition-colors disabled:opacity-50"
         >
           <Send size={18} />
           {isSubmitting ? "Sending..." : "Send Message"}

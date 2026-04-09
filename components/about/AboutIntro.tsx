@@ -13,7 +13,7 @@ export default function AboutIntro() {
           <p className="text-5xl md:text-6xl font-light text-gray-300 mt-2 mb-2 italic">
             time to explore
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl text-accent mb-6 leading-tight">
             A Better Way of Traveling and Touring the Cappadocia
           </h2>
           <p className="text-gray-600 mb-4 leading-relaxed">
@@ -33,7 +33,7 @@ export default function AboutIntro() {
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors"
+            className="inline-block bg-primary text-white px-8 py-3 rounded-[3px] font-semibold hover:bg-primary-dark transition-colors"
           >
             Contact Us
           </Link>

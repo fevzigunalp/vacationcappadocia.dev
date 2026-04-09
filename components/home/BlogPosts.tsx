@@ -7,7 +7,7 @@ export default function BlogPosts() {
   return (
     <section className="py-20">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-12 text-center text-3xl font-bold text-gray-900 md:text-4xl">
+        <h2 className="mb-12 text-center text-3xl text-accent md:text-4xl">
           Latest Blog Posts
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -15,7 +15,7 @@ export default function BlogPosts() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group block overflow-hidden rounded-xl bg-white shadow-md transition-shadow hover:shadow-xl"
+              className="group block overflow-hidden rounded-[3px] bg-light-bg shadow-md transition duration-300 hover:shadow-xl"
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
@@ -27,11 +27,11 @@ export default function BlogPosts() {
                 />
               </div>
               <div className="p-5">
-                <div className="mb-2 flex items-center gap-1 text-sm text-gray-500">
+                <div className="mb-2 flex items-center gap-1 text-sm text-text-lighter">
                   <Calendar size={14} />
                   <span>{post.date}</span>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 transition-colors group-hover:text-orange-500">
+                <h3 className="text-lg font-semibold text-accent transition duration-300 group-hover:text-primary">
                   {post.title}
                 </h3>
               </div>

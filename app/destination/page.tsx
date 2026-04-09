@@ -29,7 +29,7 @@ export default function DestinationPage() {
                 href={`/booking-locations/${dest.slug}`}
                 className="group block"
               >
-                <div className="relative h-72 rounded-xl overflow-hidden">
+                <div className="relative h-72 rounded-[3px] overflow-hidden">
                   <Image
                     src={dest.image}
                     alt={dest.name}

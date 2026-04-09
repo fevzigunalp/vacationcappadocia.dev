@@ -33,7 +33,7 @@ export default function TourCard({ tour }: TourCardProps) {
 
   return (
     <Link href={`/booking/${slug}`} className="group block">
-      <div className="overflow-hidden rounded-xl bg-white shadow-md transition-shadow hover:shadow-xl">
+      <div className="overflow-hidden rounded-[3px] bg-light-bg shadow-md transition-shadow hover:shadow-xl">
         <div className="relative h-56 w-full overflow-hidden">
           <Image
             src={image}
@@ -61,7 +61,7 @@ export default function TourCard({ tour }: TourCardProps) {
               <span>{location}</span>
             </div>
           )}
-          <h3 className="mb-3 text-lg font-semibold text-heading transition-colors group-hover:text-primary line-clamp-2">
+          <h3 className="mb-3 text-[24px] font-semibold text-accent transition-colors group-hover:text-primary line-clamp-2">
             {title}
           </h3>
           <div className="mb-3 flex items-center gap-1">
@@ -71,7 +71,7 @@ export default function TourCard({ tour }: TourCardProps) {
                 size={14}
                 className={
                   i < rating
-                    ? "fill-yellow-400 text-yellow-400"
+                    ? "fill-star-gold text-star-gold"
                     : "text-gray-300"
                 }
               />
